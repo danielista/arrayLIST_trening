@@ -7,11 +7,17 @@ public class MainArraylist {
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<String> slova = new ArrayList<>();
         list.add(33);
         list.add(5);
         list.add(44);
         list.add(77);
         list.add(111);
+        slova.add("čau");
+        slova.add("au");
+        slova.add("fuj");
+        slova.add("ruka");
+        slova.add("mamiiiiiiii");
 
         //1.sposob for loop
         System.out.println("1. sposob Using For Loop ");
@@ -66,6 +72,12 @@ public class MainArraylist {
         System.out.println("1. sposob USPORIADANIE POLA");
         Collections.sort(list);//ak chceš opačne pridaj ako 2. param toto: Collections.reverseOrder()
         System.out.println(list);
+
+        //sorting SLOV
+        System.out.println();
+        System.out.println("SORTING SLOV ;)");
+        Collections.sort(slova);
+        System.out.println(slova);
 
        /* // sorting podľa súčtu cifier :D
         System.out.println();
