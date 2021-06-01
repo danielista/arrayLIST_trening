@@ -52,15 +52,14 @@ public class Person {
         String wholeName = this.getFname() + this.getLname();
         System.out.println(wholeName);
 
+        String samohlásky = "aeuioyuáéíóúý";
         String binaryString = "";
 
         wholeName = wholeName.toLowerCase();
         for (int i = 0; i < wholeName.length(); i++) {
             char ch = wholeName.charAt(i);
 
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'y' || ch == 'á'
-                    || ch == 'é' || ch == 'í' || ch == 'ý' || ch == 'ó') binaryString += "1";
-
+            if (samohlásky.contains(String.valueOf(ch))) binaryString += "1";
             else binaryString += "0";
         }
 
