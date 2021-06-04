@@ -47,9 +47,10 @@ public class Person {
 
 
 
-    public int hashCode(){
+    public int hashCode(String fName, String lName){
 
-        String wholeName = this.getFname() + this.getLname();
+        String wholeName = fName + lName;
+        //String wholeName = this.getFname() + this.getLname();
         System.out.println(wholeName);
 
         String samohlásky = "aeuioyuáéíóúý";
@@ -59,8 +60,8 @@ public class Person {
         for (int i = 0; i < wholeName.length(); i++) {
             char ch = wholeName.charAt(i);
 
-            if (samohlásky.contains(String.valueOf(ch))) binaryString += "1";
-            else binaryString += "0";
+            if (samohlásky.contains(String.valueOf(ch))) binaryString += "0";
+            else binaryString += "1";
         }
 
         System.out.println(binaryString);

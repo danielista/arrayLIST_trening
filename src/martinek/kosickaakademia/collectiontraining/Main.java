@@ -48,7 +48,7 @@ public class Main implements Comparator<Person> {
         System.out.println();
         System.out.println("HASHCODE");
         Person la = new Person("Žofaaaaaaka","Martinekovová",'f',23);
-        System.out.println(la.hashCode());
+        System.out.println(la.hashCode("Žofaaaaaaka","Martinekovová"));
 
 
         // randomne rozhádzať poradie ORDER RANDOMIZE "SHUFFLE"
